@@ -19,7 +19,7 @@ a {
     max-width: 1158;
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto;
+    margin: 0 auto;
 }
 .page-header {
     justify-content: space-between;
@@ -32,11 +32,12 @@ a {
 }
 .header-nav {
     display: flex;
+    align-items: center;
    
 }
 .nav-list {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
    
 }
 
@@ -49,6 +50,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    margin-right: 76px;
 }
 .header-logo .logo-part {
    color: #2E2F42;
@@ -69,13 +71,10 @@ a {
 .contacts-link:focus {
    color: #404BBF;
 }
-.contacts {
-    font-style: normal
-}
+
 .contacts-list {
     display: flex;
     gap: 40px;
-    column-gap: 40ox;
 }
 .contacts-link {
     font-style: normal;
@@ -159,6 +158,8 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;;
+    margin-bottom: 8px;
+    text-align: center;
 }
 .future-text {
     font-weight: 400;
@@ -167,12 +168,14 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.02em;
     color: #434455;
     max-width: 264px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 /*3-section*/
 .team-section{
     background-color: #F4F4FD;
-    margin-top: 120px;
-    margin-bottom:120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .section-title {
     font-weight: 700;
@@ -183,13 +186,18 @@ h1,h2,h3,h4,h5,h6 {
         text-align: center;
         color: #2E2F42;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 .list-our-team {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    text-align: center;
     gap: 24px;
 }
 .team-card {
     background-color: #fff;
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 /*3-endsection*/
 /*4-section*/
@@ -198,18 +206,22 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 120px;
 }
 .our-portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-}
+        display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
 .portfolio-list {
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
-}
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    flex-basis: calc((100% - 2 * 24px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
 /*4-end-section*/
 /*footer*/
@@ -231,7 +243,10 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 264px;
 }
 
-.footer-logo .logo-part {
+.footer-logo {
+    margin-right: 76px;
+}
+.logo-part {
     color: #f4f4fd;
 }
 
