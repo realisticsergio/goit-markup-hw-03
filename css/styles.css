@@ -78,7 +78,7 @@ border-bottom: 1px solid #e7e9fc;
 
 }
 .footer-logo { 
-    display: inline-block;
+    display: block;
     margin-left: 156px;
     margin-bottom: 16px;
 }
@@ -277,7 +277,7 @@ border-bottom: 1px solid #e7e9fc;
     margin-bottom: 8px
 }
 
-/*4-endsection*/
+/*3-endsection*/
 /*footer*/
 .footer-page {
     background-color: #2E2F42;
@@ -292,5 +292,8 @@ border-bottom: 1px solid #e7e9fc;
     color: #f4f4fd;
     max-width: 264px;
     margin-left: 156px;
+}
+.logo-part {
+    display: inline-block;
 }
 /*end-footer*/
