@@ -188,7 +188,7 @@ border-bottom: 1px solid #e7e9fc;
      gap: 24px;
  }
  .feature-item {
-     flex-basis: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 .future-title {
     font-weight: 500;
@@ -217,7 +217,6 @@ border-bottom: 1px solid #e7e9fc;
 .section-title {
     font-weight: 700;
     font-size: 36px;
-    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
@@ -233,7 +232,6 @@ border-bottom: 1px solid #e7e9fc;
     background-color: #fff;
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
 }
 .team-details-wrap {
     padding: 32px 0 32px
