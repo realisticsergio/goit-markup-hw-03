@@ -14,8 +14,13 @@ body {
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-
+/*li {
+        margin: 0;
+            padding: 0;
+}*/
 a {
     text-decoration: none;
 }
@@ -71,7 +76,6 @@ border-bottom: 1px solid #e7e9fc;
     gap: 40px;
 }
 .nav-item {
-    padding: 24px 0 24px
 }
 .header-logo .logo-part {
     color: #2E2F42;
